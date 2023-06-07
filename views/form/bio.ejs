@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/fontawesome-6/css/all.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* NAVBAR */
+      #sitename {
+        color: var(--primary);
+      }
+      #sitename span {
+        font-family: text1;
+        font-size: 40px;
+      }
+      #active {
+        background: var(--primary);
+      }
+      @media (max-width: 240px) {
+        #sitename span {
+          font-family: text1;
+          font-size: 20px;
+        }
+        #sitename i{
+          font-size: 20px;
+        }
+        #baricon{
+            font-size: 20px;
+        }
+      }
+
+      form input:hover{ 
+        outline: 2px solid var(--primary);
+      }
+
+      form input{
+        padding: 0px 10px;
+        background: var(--colored);
+      }
+      #button{
+        background: var(--primary);
+        font-family: text;
+        font-size: 20px;
+      }
+      textarea:hover{
+        outline: 2px solid var(--primary);
+      }
+    </style>
+
+    <nav class="h-20 flex items-center justify-around">
+      <div id="sitename" class="text-4xl gap-3 flex items-center">
+        <span class="">chatbox</span>
+        <i class="fas fa-up-right-and-down-left-from-center mb-2"></i>
+      </div>
+      <div
+        class="hidden sm:flex md:w-72 lg:w-96 w-52 h-12 items-center rounded-xl bg-white"
+      >
+        <i class="fas fa-search ml-2"></i>
+        <input
+          class="w-[100%] bg-transparent px-2 h-full border-none outline-none"
+          type="text"
+          placeholder="hello world"
+        />
+      </div>
+      
+      <div class="block sm:hidden">
+        <i style="color: var(--primary)" class="fas fa-bars text-4xl" id="baricon"></i>
+      </div>
+    </nav>
+
+    <section class="mt-2 w-full flex items-center justify-center">
+        <form action=""  method="POST" class="rounded flex items-center justify-center w-[95%] sm:w-[75%] md:w-[50%] lg:w-[40%] py-4 px-2 bg-white" enctype="multipart/form-data">
+            <div class="flex w-[90%] flex-col">
+                 <h1>bio</h1>
+                 <div class="mt-4 flex w-[100%] justify-between items-center gap-6">
+                    <div  lass="">
+                        <label class="capitalize" >Occuption</label>
+                        <input class="w-[100%] h-10 mt-2" type="text" name="occuption">
+                    </div>
+                    <div class="">
+                        <label class="capitalize" >address</label>
+                        <input class="w-[100%] h-10 mt-2" type="text" name="address">
+                    </div>
+                 </div>
+                 <div class="mt-4 flex w-[100%] justify-between items-center gap-6">
+            
+                    <div class="">
+                        <label class="capitalize" >Profile picture</label>
+                        <input class="w-[100%] h-10 mt-2" type="file" name="profilepic">
+                    </div>
+                    <div class="">
+                        <label class="capitalize">cover Picture</label>
+                        <input class="w-[100%] h-10 mt-2" type="file" name="coverPic">
+                    </div>
+                 </div>
+                 
+                 <div class="mt-4 flex w-[100%]">
+                    <div class="w-[100%] flex flex-col">
+                        <label class="mb-2" for="">Bio</label>
+                        <textarea class="resize-none border-2 h-28" name="bio" ></textarea>
+                    </div>
+                 </div>
+                 <div class="mt-4 flex w-[100%]">
+                    <div class="w-[100%]">
+                        <button id="button" name="btn" type="submit" class="w-[100%] h-12 text-white rounded capitalize">done</button>
+                    </div>
+                 </div>
+            </div>
+        </form>
+    </section>
+
+
+  </body>
+</html>
+
+

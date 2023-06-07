@@ -1,0 +1,191 @@
+.navigator {
+    display: none;
+}
+
+.theprofile {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.theprofile-inf {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theprofile-inf .image {
+    width: 40%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: center/cover;
+    border-radius: 5px;
+}
+
+.sub {
+    position: absolute;
+}
+
+.sub img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.active-view {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(40, 231, 107);
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+}
+
+.theprofile-inf h1 {
+    margin-top: 20px;
+}
+
+.accord {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.accord .accord-menu {
+    display: flex;
+    align-items: center;
+}
+
+.accord .accord-menu i {
+    display: none;
+}
+
+.accord .accord-menu a {
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.accord .accord-menu a.active {
+    border-bottom: 2px solid var(--primary);
+}
+
+.accord .accord-menu a:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+.accord button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.otherdetails {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ABOUT */
+.about {
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.about-container {
+    margin-top: 20px;
+}
+
+.about-detail span {
+    font-weight: 900;
+}
+
+.about-detail {
+    margin-top: 9px;
+}
+
+@media(max-width:730px) {
+    .accord button {
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:670px) {
+    .theprofile-inf {
+        width: 90%;
+    }
+
+    .otherdetails {
+        width: 90%;
+    }
+    
+}
+@media(max-width:530px) {
+    .theprofile-inf {
+        width: 95%;
+    }
+
+    .otherdetails {
+        width: 95%;
+    }
+}
+@media(max-width:500px) {
+    .accord .accord-menu{
+        flex-direction: column;
+    }
+    .accord .accord-menu i{
+        display: flex;
+    }
+    .accord .accord-menu a{
+        display: none;
+    }
+}
+
+@media(max-width:300px){
+.theprofile-inf h1 {
+        font-size: 15px;
+    }
+        .theprofile-inf p{
+            font-size: 13px;
+            text-align: center;
+        }
+        .accord{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .accord button{
+            width: 90%;
+            font-size: 13px;
+        }
+}

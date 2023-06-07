@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/fontawesome-6/css/all.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="relative"></body>
+
+<style>
+    /* NAVBAR */
+    #sitename {
+        color: var(--primary);
+    }
+
+    #sitename span {
+        font-family: text1;
+        font-size: 40px;
+    }
+
+    #active {
+        background: var(--primary);
+    }
+
+    @media (max-width: 240px) {
+        #sitename span {
+            font-family: text1;
+            font-size: 20px;
+        }
+
+        #sitename i {
+            font-size: 20px;
+        }
+
+        #baricon {
+            font-size: 20px;
+        }
+    }
+
+    i {
+        color: var(--primary);
+    }
+
+    input {
+        background: var(--colored);
+    }
+
+    nav {
+        background: var(--colored);
+    }
+
+    @media (max-width: 500px) {
+        #advert {
+            display: none;
+        }
+
+        #post {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 260px) {
+        #sponouse {
+            width: 90%;
+            font-size: 13px;
+        }
+
+        #createPost {
+            padding: 10px 0px;
+            height: fit-content;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<nav id="" class="h-20 w-full flex fixed z-50 top-0 items-center justify-around">
+    <div id="sitename" class="text-4xl gap-3 flex items-center">
+        <span class="">chatbox</span>
+        <i class="fas fa-up-right-and-down-left-from-center mb-2"></i>
+    </div>
+    <div class="hidden sm:flex md:w-72 lg:w-96 w-52 h-12 items-center rounded-xl bg-white">
+        <i class="fas fa-search ml-2"></i>
+        <input class="w-[100%] bg-transparent px-2 h-full border-none outline-none" type="text"
+            placeholder="hello world" />
+    </div>
+    <div class="hidden sm:flex items-center text-2xl gap-6">
+        <div class="relative">
+            <div class="bg-red-500 h-2 w-2 rounded-full absolute -right-0.5 top-1"></div>
+            <i class="fa fa-bell" aria-hidden="true"></i>
+        </div>
+        <i class="fas fa-cog"></i>
+        <i class="fa fa-user"></i>
+    </div>
+
+    <div class="block sm:hidden">
+        <i style="color: var(--primary)" class="fas fa-bars text-4xl" id="baricon"></i>
+    </div>
+</nav>
+
+<section class="h-screen w-full absolute top-[80px]">
+    <div class="w-[20%] fixed hidden md:flex flex-col items-center justify-center">
+        <div class="w-[90%] py-3  flex flex-col items-center justify-center">
+            <div
+                class="flex items-center mt-4 justify-center gap-2 w-[90%] hover:text-white hover:bg-blue-600 py-2 rounded">
+                <div class="h-12 w-12 rounded-full bg-green-500 flex items-center justify-center">
+                    <i class="fa fa-home text-white" aria-hidden="true"></i>
+                </div>
+                <p>home</p>
+            </div>
+            <div
+                class="flex items-center mt-4 justify-center gap-2 w-[90%] hover:bg-blue-600 hover:text-white py-2 rounded">
+                <div class="h-12 w-12 rounded-full bg-green-500 flex items-center justify-center">
+                    <i class="fa fa-home text-white" aria-hidden="true"></i>
+                </div>
+                <p>profile</p>
+            </div>
+            <div
+                class="flex items-center mt-4 justify-center gap-2 w-[90%] hover:text-white hover:bg-blue-600 py-2 rounded">
+                <div class="h-12 w-12 rounded-full bg-green-500 flex items-center justify-center">
+                    <i class="fa fa-home text-white" aria-hidden="true"></i>
+                </div>
+                <p>group</p>
+            </div>
+            <div
+                class="flex items-center mt-4 justify-center gap-2 w-[90%] hover:text-white hover:bg-blue-600 py-2 rounded">
+                <div class="h-12 w-12 rounded-full bg-green-500 flex items-center justify-center">
+                    <i class="fa fa-home text-white" aria-hidden="true"></i>
+                </div>
+                <p>group</p>
+            </div>
+            <div
+                class="flex items-center mt-4 justify-center gap-2 w-[90%] hover:text-white hover:bg-blue-600 py-2 rounded">
+                <div class="h-12 w-12 rounded-full bg-green-500 flex items-center justify-center">
+                    <i class="fa fa-home text-white" aria-hidden="true"></i>
+                </div>
+                <p>group</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" absolute flex right-0 md:w-[80%] w-[100%]">
+
+        
+    </div>
+
+
+</section>
+
+
+
+</body>
+
+</html>

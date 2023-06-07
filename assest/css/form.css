@@ -1,0 +1,119 @@
+/*  */
+.theform {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theform form {
+    margin-top: 5px;
+    border-radius: 4px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    padding: 10px 0px;
+}
+
+form .move {
+    width: 90%;
+    margin-left: 30px;
+}
+
+form .input-holder {
+    width: 100%;
+}
+
+form .combine {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+form textarea{
+    height: 100px;
+    resize: none;
+    padding: 10px 10px;
+}
+form .move h1 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+form .combine input {
+    height: 35px;
+    padding: 0px 10px;
+    border: none;
+    background: #EDF2F6;
+    outline: none;
+}
+
+form .combine input:hover {
+    outline: 2px solid var(--primary);
+    border: none;
+}
+form .combine textarea:hover{
+    outline: 2px solid var(--primary);
+    border: none;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form .two-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .two-container .combine {
+    width: 45%;
+}
+
+form .check {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+form .check input[type='checkbox'] {
+    height: 24px;
+}
+
+form button {
+    height: 35px;
+    margin-top: 10px;
+    background: var(--primary);
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width:600px){
+    .theform form{
+        width: 95%;
+        
+    }
+        form .move {
+            width: 90%;
+            margin-left: 0px;
+        }
+}
+
+@media screen and (max-width:230px) {
+    form .two-container {
+            width: 90%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+}

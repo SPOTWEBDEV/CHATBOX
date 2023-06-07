@@ -1,0 +1,183 @@
+.hoz_navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: white; */
+}
+
+/* SITE INFORMATION (NAME AND SITE ICON) */
+.hoz_navbar .sitename-info span {
+    font-family: text1;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: var(--primary)
+}
+
+.hoz_navbar .sitename-info i {
+    font-size: 30px;
+    margin-left: 10px;
+    color: var(--primary)
+}
+
+
+/* NAVIGATOR */
+
+.navigator {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navigator form{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navigator a {
+    height: 50%;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator a.active {
+    background: var(--primary);
+    width: 100px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* SITE SEARCH BAR */
+.hoz_navbar .search-bar {
+    height: 40px;
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+}
+
+.hoz_navbar .search-bar i {
+    color: var(--primary);
+}
+
+.hoz_navbar .search-bar input {
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 90%;
+}
+
+/* NOTIFICATION */
+.notification-holder {
+    display: flex;
+    align-items: center;
+}
+
+.notification-holder .notification-bar {
+    margin: 10px;
+    position: relative;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.notification-holder .notification-bar i {
+    font-size: 20px;
+}
+
+.notification-holder .notification-bar span {
+    height: 19px;
+    width: 19px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    color: white;
+    font-size: 14px;
+}
+
+.notification-holder .notification-bar .person i {
+    font-size: 25px;
+    color: var(--primary);
+}
+
+.hidden-icon {
+    display: none;
+}
+
+.hidden-icon i {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+@media(max-width:900px) {
+
+    .hoz_navbar .sitename-info span {
+        font-size: 30px;
+    }
+
+    .hoz_navbar .sitename-info i {
+        font-size: 20px;
+    }
+
+    .notification-holder .notification-bar {
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .notification-holder .notification-bar i {
+        font-size: 13px;
+    }
+
+    .notification-holder .notification-bar span {
+        height: 15px;
+        width: 15px;
+        font-size: 13px;
+    }
+
+    .notification-holder .notification-bar .person i {
+        font-size: 20px;
+        color: var(--primary);
+    }
+
+    .hoz_navbar .search-bar {
+        height: 40px;
+        width: 300px;
+    }
+
+    .hoz_navbar .search-bar i {
+        color: var(--primary);
+    }
+}
+
+@media(max-width:670px) {
+    .notification-holder {
+        display: none;
+        align-items: center;
+    }
+}
+
+@media(max-width:500px) {
+    .hoz_navbar .search-bar {
+        display: none;
+    }
+}

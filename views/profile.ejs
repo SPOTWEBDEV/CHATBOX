@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/hoz_navbar.css" />
+    <link rel="stylesheet" href="/css/sidenav.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/fontawesome-6/css/all.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="hoz_navbar"></nav>
+    <section class="profile">
+      <div class="theprofile">
+        <div class="theprofile-inf">
+          <div class="image">
+            <img src="/ProfileImage/<%= result[0].profileImage %>" alt="" />
+            <div class="sub">
+              <div class="active-view"></div>
+              <img src="/ProfileImage/<%= result[0].coverImage%>" alt="" />
+            </div>
+          </div>
+          <h1><%= result[0].username %></h1>
+          <p><%= result[0].bio %></p>
+
+          <div class="accord">
+            <div class="accord-menu">
+              <i class="fas fa-bars"></i>
+              <a href="#" >home</a>
+              <a href="/chatbox/timeline">post</a>
+              <a href="#">vidoes</a>
+              <a href="#">page</a>
+              <a href="#">group</a>
+              <a href="#" class="active">account</a>
+            </div>
+            <form action="/chatbox/deleteAccout" method="POST">
+              <button
+                onclick="return confirm('ARE YOUR SURE YOU WANT TO DELETE YOUR CHATBOX ACCOUNT')"
+              >
+                Delete account
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="otherdetails">
+          <div class="about">
+            <h1>ABOUT</h1>
+            <div class="about-container">
+              <div class="about-detail">
+                <span>bio</span>
+                <p><%= result[0].bio %></p>
+              </div>
+              <div class="about-detail">
+                <span>Address</span>
+                <p><%= result[0].address %></p>
+              </div>
+              <div class="about-detail">
+                <span>Occupation</span>
+                <p><%= result[0].occuption %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/include/hoznavbar.js"></script>
+    <!-- <script src="/include/sidenav.js"></script> -->
+  </body>
+</html>

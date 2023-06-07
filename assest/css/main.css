@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--colored);
+}
+
+@font-face {
+    font-family: text;
+    src: url(/font/BarlowSemiCondensed-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: text1;
+    src: url(/font/BalooTammudu-Regular.ttf);
+}
+
+:root {
+    /* --primary:#14B7DC; */
+    --primary: #0D6EFD;
+    --colored: #EDF2F6;
+}
+
+::placeholder {
+    font-family: text;
+    text-transform: capitalize;
+}
+
+p,
+h1,
+a,
+label,
+small,
+span,
+h6 {
+    text-transform: capitalize;
+    font-family: text;
+}
+
+input {
+    font-family: text;
+}
